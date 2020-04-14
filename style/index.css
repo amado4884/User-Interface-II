@@ -168,7 +168,8 @@ header div.top nav ul {
   justify-content: flex-start;
 }
 
-header div.top nav ul a {
+header div.top nav ul a,
+a.hover {
   margin-right: -1px;
   text-decoration: none;
   padding: 10px 30px;
@@ -179,7 +180,9 @@ header div.top nav ul a {
 }
 
 header div.top nav ul a:hover,
-.current-page {
+section.header div.info a:hover,
+a.hover:hover,
+header div.top nav ul li a.current-page {
   background-color: black;
   color: white;
 }
@@ -235,10 +238,6 @@ section.gallery {
   align-items: center;
 }
 
-section.gallery div.image-div {
-  /* flex: 1 0 21%; */
-}
-
 section.gallery div.image-div img {
   border: 1px solid black;
   width: 95%;
@@ -266,7 +265,7 @@ footer h4 {
   padding: 30px;
 }
 
-footer a.contact {
+footer .contact a {
   border: 1px solid black;
   padding: 10px 30px;
   margin: 30px;
